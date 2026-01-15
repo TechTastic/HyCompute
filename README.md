@@ -20,3 +20,4 @@ Though you can see some of the planned features in the [planned features](docs/P
 
 - Hypixel team for making [Hytale](https://hytale.com)
 - [Hytale Modding Discord](https://discord.gg/hytalemodding) for the ideas and support
+- [SquidDev](https://squiddev.cc) for the [Cobalt](https://github.com/cc-tweaked/Cobalt) library
