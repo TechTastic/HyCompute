@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "131816c3ad1fe43a",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f9101c263d0590c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3acc9160dc967613",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Planned Features/Drone and Bug Upgrades.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Drone and Bug Upgrades"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef342ca265650e5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a252e258fa4b93a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "10b6b07a05f40815",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "35052065ff26d527",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3099b132215ab1d1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0f668b91d3b59774",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a2cd5e1d0674431",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b133f656ccc6bcd9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Planned Features/Drone and Bug Upgrades.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Drone and Bug Upgrades"
+            }
+          },
+          {
+            "id": "bc88cb77f95dc50c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Planned Features/Drone and Bug Upgrades.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Drone and Bug Upgrades"
+            }
+          },
+          {
+            "id": "aa7757d51a0c94e6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "94185529bcbaa003",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d3305aa12b53453d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Planned Features/Drone and Bug Upgrades.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Drone and Bug Upgrades"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "3acc9160dc967613",
+  "lastOpenFiles": [
+    "Planned Features/Programmable Entities.md",
+    "Planned Features/Drone and Bug Upgrades.md",
+    "Glossary/Drone.md",
+    "Glossary/Bug.md",
+    "Planned Features/Integration with other mods.md",
+    "Planned Features/Tiered Computers.md",
+    "Planned Features/Drone Workbench.md",
+    "Planned Features/Support for different interpreted languages.md",
+    "Planned Features/Different Filesystem implementations.md",
+    "Planned Features/Persistent Filesystem.md",
+    "Glossary/Virtual Filesystem.md",
+    "Glossary",
+    "VFS.md",
+    "README.md",
+    "Planned Features"
+  ]
+}

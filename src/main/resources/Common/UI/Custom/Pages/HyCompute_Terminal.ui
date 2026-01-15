@@ -1,0 +1,56 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {
+  Group {
+    Anchor: (Width: 800, Height: 500);
+    Background: (Color: #0c0c0c);
+    Padding: (Full: 10);
+    LayoutMode: Top;
+
+    // Output area
+    Group #OutputArea {
+      LayoutMode: TopScrolling;
+      FlexWeight: 1;
+      ScrollbarStyle: $C.@TranslucentScrollbarStyle;
+      Background: (Color: #0a0a0a);
+      Padding: (Full: 8);
+
+      Label #OutputText {
+        Style: (
+          FontSize: 14,
+          TextColor: #33ff33,
+          Wrap: true
+        );
+      }
+    }
+
+    // Input row
+    Group #InputRow {
+      LayoutMode: Left;
+      Anchor: (Height: 40, Top: 10);
+
+      Label {
+        Text: ">";
+        Style: (
+          FontSize: 14,
+          TextColor: #33ff33,
+          VerticalAlignment: Center
+        );
+        Anchor: (Width: 20);
+      }
+
+      TextField #InputField {
+        FlexWeight: 1;
+        Anchor: (Height: 32);
+        Style: (FontSize: 14, TextColor: #33ff33);
+        Background: (Color: #1a1a1a);
+        Padding: (Horizontal: 8);
+      }
+
+      $C.@TextButton #SubmitButton {
+        @Text = "Run";
+        Anchor: (Width: 80, Left: 10);
+      }
+    }
+  }
+}

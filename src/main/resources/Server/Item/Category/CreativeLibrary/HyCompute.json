@@ -1,0 +1,13 @@
+{
+  "Icon": "Icons/ItemCategories/Natural.png",
+  "Order": 4,
+  "Name": "hycompute.category.hycompute.name",
+  "Children": [
+    {
+      "Icon": "Icons/ItemCategories/HypixelActive.png",
+      "Name": "hycompute.category.hycompute.blocks.name",
+      "Id": "IC_HyCompute_Blocks"
+    }
+  ],
+  "Id": "IC_HyCompute"
+}

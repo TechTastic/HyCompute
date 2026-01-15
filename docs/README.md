@@ -1,0 +1,1 @@
+This folder contains the documentation for the HyCompute mod, as well as the general project design, ideas and planned features.

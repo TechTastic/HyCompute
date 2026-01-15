@@ -1,0 +1,5 @@
+blocks.aio_computer.name = "Computer"
+blocks.aio_computer.description = "An rather odd-looking device, you wonder what it does."
+
+category.hycompute.name = "HyCompute"
+category.hycompute.blocks.name = "Blocks"

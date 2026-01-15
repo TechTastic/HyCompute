@@ -1,0 +1,18 @@
+{
+  "Group": "HyCompute",
+  "Name": "HyCompute",
+  "Main": "dev.cozygalvinism.hycompute.HyComputePlugin",
+  "Version": "0.1.0",
+  "Description": "Adds computers and logic to Hytale!",
+  "Authors": [
+    {
+      "Name": "cozyGalvinism"
+    }
+  ],
+  "Website": "https://github.com/cozyGalvinism/HyCompute",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true
+}

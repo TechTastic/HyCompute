@@ -1,0 +1,1 @@
+A drone is an entity that can run programs written by the player. They can move around and, with upgrades, break and place blocks, deal damage etc. They are mostly unrestricted in movement, can fly and are not otherwise affected by gravity.
