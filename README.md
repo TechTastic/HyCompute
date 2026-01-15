@@ -5,6 +5,11 @@ HyCompute is a Hytale mod that adds computers to the game.
 It is still very early in development and is not yet ready for release.
 Though you can see some of the planned features in the [planned features](docs/Planned%20Features) directory.
 
+## Documentation
+
+You can find the documentation and general project information in the [docs](docs) directory.
+It is an Obsidian Vault, so for the best reading experience, you should use Obsidian.
+
 ## How to build
 
 1. Copy the Hytale server jar into the `libs` directory and name it `HytaleServer.jar`.
