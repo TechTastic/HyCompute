@@ -1,1 +1,1 @@
-HyCompute currently only supports Lua and uses it for its commands (see [[ROM]]). This should be extended at some point to allow the implementation for different interpreted languages without bloating the size of the plugin by adding too many builtin programming languages.
+HyCompute currently only supports Lua and uses it for its commands (see [ROM](../Glossary/ROM.md)). This should be extended at some point to allow the implementation for different interpreted languages without bloating the size of the plugin by adding too many builtin programming languages.
