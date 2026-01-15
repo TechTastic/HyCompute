@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Glossary/Virtual Filesystem.md",
+                "file": "Planned Features/Drone and Bug Upgrades.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Virtual Filesystem"
+              "title": "Drone and Bug Upgrades"
             }
           }
         ]
@@ -185,18 +185,17 @@
   },
   "active": "3acc9160dc967613",
   "lastOpenFiles": [
-    "Glossary/ROM.md",
-    "Glossary/Virtual Filesystem.md",
-    "Planned Features/Support for different interpreted languages.md",
-    "Planned Features/Tiered Computers.md",
     "Planned Features/Programmable Entities.md",
     "Planned Features/Drone and Bug Upgrades.md",
-    "Planned Features/Persistent Filesystem.md",
-    "Planned Features/Integration with other mods.md",
-    "Planned Features/Drone Workbench.md",
-    "Planned Features/Different Filesystem implementations.md",
     "Glossary/Drone.md",
     "Glossary/Bug.md",
+    "Planned Features/Integration with other mods.md",
+    "Planned Features/Tiered Computers.md",
+    "Planned Features/Drone Workbench.md",
+    "Planned Features/Support for different interpreted languages.md",
+    "Planned Features/Different Filesystem implementations.md",
+    "Planned Features/Persistent Filesystem.md",
+    "Glossary/Virtual Filesystem.md",
     "Glossary",
     "VFS.md",
     "README.md",

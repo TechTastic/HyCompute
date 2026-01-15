@@ -1,1 +1,1 @@
-Currently, the [VFS](../Glossary/Virtual%20Filesystem.md) is the only filesystem HyCompute supports as the underlying filesystem of computers. Eventually, this should be able to be abstracted and extended to cover an SQLite-backed filesystem as well for improved performance.
+Currently, the [[Virtual Filesystem|VFS]] is the only filesystem HyCompute supports as the underlying filesystem of computers. Eventually, this should be able to be abstracted and extended to cover an SQLite-backed filesystem as well for improved performance.

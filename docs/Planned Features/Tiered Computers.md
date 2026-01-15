@@ -1,4 +1,4 @@
-Computers (and [Programmable Entities](./Programmable%20Entities)) should be upgradable with improving components.
+Computers (and [[Programmable Entities]]) should be upgradable with improving components.
 
 Some ideas:
 
