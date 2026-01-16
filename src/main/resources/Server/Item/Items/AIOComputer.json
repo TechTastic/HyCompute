@@ -30,6 +30,19 @@
           }
         ]
       }
+    },
+    "BlockEntity": {
+      "Components": {
+        "ComputerBlock": {
+          "ComputerId": ""
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "ItemId": "AIOComputer",
+        "GatherType": "Benches"
+      }
     }
   },
   "Categories": [

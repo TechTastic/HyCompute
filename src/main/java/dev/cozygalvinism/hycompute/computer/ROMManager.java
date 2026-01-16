@@ -129,7 +129,7 @@ public class ROMManager {
             local src = arg[1]
             local dest = arg[2]
             
-            if not sec or not dest then
+            if not src or not dest then
                 print("Usage: cp <source> <destination>")
                 return
             end

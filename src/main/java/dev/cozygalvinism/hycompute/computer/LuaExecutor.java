@@ -199,11 +199,7 @@ public class LuaExecutor {
             public Varargs invoke(LuaState state, Varargs args) throws LuaError {
                 String path = args.arg(1).checkString();
                 try {
-                    if (vfs.isDirectory(path)) {
-                        vfs.deleteRecursive(path);
-                    } else {
-                        vfs.deleteFile(path);
-                    }
+                    vfs.delete(path);
                     return Constants.NIL;
                 } catch (VirtualFilesystem.FSException e) {
                     throw new LuaError(e.getMessage());
@@ -243,7 +239,11 @@ public class LuaExecutor {
             @Override
             public Varargs invoke(LuaState state, Varargs args) throws LuaError {
                 String path = args.arg(1).checkString();
-                return ValueFactory.valueOf(vfs.getSize(path));
+                try {
+                    return ValueFactory.valueOf(vfs.getSize(path));
+                } catch (VirtualFilesystem.FSException e) {
+                    throw new LuaError(e.getMessage());
+                }
             }
         });
 
@@ -337,7 +337,7 @@ public class LuaExecutor {
         os.rawset("getComputerID", new VarArgFunction() {
             @Override
             protected Varargs invoke(LuaState luaState, Varargs varargs) throws LuaError, UnwindThrowable {
-                return ValueFactory.valueOf(computer.getId().hashCode());
+                return ValueFactory.valueOf(computer.getId().toString());
             }
         });
 

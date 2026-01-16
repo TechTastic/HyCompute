@@ -4,6 +4,7 @@ import org.squiddev.cobalt.LuaState;
 import org.squiddev.cobalt.LuaTable;
 import org.squiddev.cobalt.ValueFactory;
 
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -16,9 +17,9 @@ public class Computer {
     private boolean running;
     private LuaExecutor luaExecutor;
 
-    public Computer(UUID id) throws VirtualFilesystem.FSException {
+    public Computer(UUID id, Path storagePath) throws VirtualFilesystem.FSException {
         this.id = id;
-        this.filesystem = new VirtualFilesystem();
+        this.filesystem = new VirtualFilesystem(storagePath, 1024 * 1024);
         this.outputBuffer = new ArrayList<>();
         this.running = false;
     }
