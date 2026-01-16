@@ -1,6 +1,5 @@
 package dev.cozygalvinism.hycompute.computer;
 
-import org.squiddev.cobalt.LuaState;
 import org.squiddev.cobalt.LuaTable;
 import org.squiddev.cobalt.ValueFactory;
 
@@ -54,7 +53,7 @@ public class Computer {
 
         if (filesystem.exists("/home/startup.lua")) {
             LuaExecutor.ExecutionResult result = luaExecutor.executeFile("/home/startup.lua");
-            if (!result.isSuccess()) {
+            if (result.isError()) {
                 print("Startup error: " + result.getError());
             }
         }
@@ -104,7 +103,7 @@ public class Computer {
                 return "Usage: lua <code>";
             }
             LuaExecutor.ExecutionResult result = luaExecutor.execute(args);
-            if (!result.isSuccess()) {
+            if (result.isError()) {
                 return result.getError();
             }
             return null;
@@ -127,7 +126,7 @@ public class Computer {
         }
 
         LuaExecutor.ExecutionResult result = luaExecutor.execute(trimmed);
-        if (!result.isSuccess()) {
+        if (result.isError()) {
             return "Unknown command: " + command + ". Type 'help' for available commands.";
         }
 
@@ -144,7 +143,7 @@ public class Computer {
         luaExecutor.getGlobals().rawset("arg", argTable);
 
         LuaExecutor.ExecutionResult result = luaExecutor.executeFile(path);
-        if (!result.isSuccess()) {
+        if (result.isError()) {
             return result.getError();
         }
         return null;
