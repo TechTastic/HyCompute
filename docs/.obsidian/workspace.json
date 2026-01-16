@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Planned Features/Drone and Bug Upgrades.md",
+                "file": "02-Known Issues/The terminal content of the computer is lost when opening it again.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Drone and Bug Upgrades"
+              "title": "The terminal content of the computer is lost when opening it again"
             }
           }
         ]
@@ -185,20 +185,25 @@
   },
   "active": "3acc9160dc967613",
   "lastOpenFiles": [
-    "Planned Features/Programmable Entities.md",
-    "Planned Features/Drone and Bug Upgrades.md",
-    "Glossary/Drone.md",
-    "Glossary/Bug.md",
-    "Planned Features/Integration with other mods.md",
-    "Planned Features/Tiered Computers.md",
-    "Planned Features/Drone Workbench.md",
-    "Planned Features/Support for different interpreted languages.md",
-    "Planned Features/Different Filesystem implementations.md",
-    "Planned Features/Persistent Filesystem.md",
-    "Glossary/Virtual Filesystem.md",
-    "Glossary",
+    "02-Known Issues/Computers lose their files and folders when broken.md",
+    "02-Known Issues/The terminal content of the computer is lost when opening it again.md",
+    "01-Features/Persistent Filesystem.md",
+    "99-Glossary/Bug.md",
+    "03-Planned Features/Programmable Entities.md",
+    "03-Planned Features/Drone Workbench.md",
+    "01-Features",
+    "03-Planned Features/Different Filesystem implementations.md",
+    "99-Glossary/Computer.md",
+    "02-Known Issues",
+    "99-Glossary/Drone.md",
+    "99-Glossary/Virtual Filesystem.md",
+    "03-Planned Features/Drone and Bug Upgrades.md",
+    "03-Planned Features/Integration with other mods.md",
+    "03-Planned Features/Tiered Computers.md",
+    "03-Planned Features/Support for different interpreted languages.md",
+    "99-Glossary",
     "VFS.md",
     "README.md",
-    "Planned Features"
+    "03-Planned Features"
   ]
 }

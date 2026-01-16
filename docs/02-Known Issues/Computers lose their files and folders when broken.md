@@ -1,0 +1,1 @@
+Currently, computers lose their ID when broken and placed again. In the meantime, make sure you place your PC where you can be sure that you won't have to move it again.

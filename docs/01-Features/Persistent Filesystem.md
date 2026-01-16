@@ -1,0 +1,1 @@
+HyCompute features a persistent filesystem for computers. Files under `/home` will be persisted to `mods/HyCompute_HyCompute/computers/{computer_id}`. Technical implementation allows for more folders in the future without big changes.
