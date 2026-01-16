@@ -3,7 +3,7 @@
 HyCompute is a Hytale mod that adds computers to the game.
 
 It is still very early in development and is not yet ready for release.
-Though you can see some of the planned features in the [planned features](docs/Planned%20Features) directory.
+Though you can see some of the planned features in the [planned features](docs/03-Planned%20Features) directory.
 
 ## Documentation
 

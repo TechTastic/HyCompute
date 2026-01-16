@@ -1,1 +1,3 @@
 This folder contains the documentation for the HyCompute mod, as well as the general project design, ideas and planned features.
+
+It is intended to be viewed and edited with Obsidian, but can be browsed without it. Links to pages within the vault may not be shown on GitHub due to lack of support for Wikilinks. Once there is a way to tell Obsidian not to convert Markdown links to Wikilinks, the documentation will use relative Markdown links to make it GitHub compatible.

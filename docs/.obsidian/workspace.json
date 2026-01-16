@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-Known Issues/The terminal content of the computer is lost when opening it again.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The terminal content of the computer is lost when opening it again"
+              "title": "README"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "3acc9160dc967613",
   "lastOpenFiles": [
-    "02-Known Issues/Computers lose their files and folders when broken.md",
     "02-Known Issues/The terminal content of the computer is lost when opening it again.md",
+    "02-Known Issues/Computers lose their files and folders when broken.md",
     "01-Features/Persistent Filesystem.md",
     "99-Glossary/Bug.md",
     "03-Planned Features/Programmable Entities.md",
