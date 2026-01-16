@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "04-Lua API/Shell API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Shell API"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "0f668b91d3b59774",
@@ -185,6 +185,13 @@
   },
   "active": "3acc9160dc967613",
   "lastOpenFiles": [
+    "04-Lua API/OS API.md",
+    "04-Lua API/Shell API.md",
+    "04-Lua API/Filesystem API.md",
+    "04-Lua API/Term API.md",
+    "04-Lua API/Globals.md",
+    "README.md",
+    "04-Lua API",
     "02-Known Issues/The terminal content of the computer is lost when opening it again.md",
     "02-Known Issues/Computers lose their files and folders when broken.md",
     "01-Features/Persistent Filesystem.md",
@@ -203,7 +210,6 @@
     "03-Planned Features/Support for different interpreted languages.md",
     "99-Glossary",
     "VFS.md",
-    "README.md",
     "03-Planned Features"
   ]
 }
