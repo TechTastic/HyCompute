@@ -12,6 +12,7 @@ public class Computer {
     private final UUID id;
     private final VirtualFilesystem filesystem;
     private final List<String> outputBuffer;
+    private final StringBuilder currentLine = new StringBuilder();
     private String workingDirectory = "/home";
     private boolean running;
     private LuaExecutor luaExecutor;
@@ -29,15 +30,30 @@ public class Computer {
     public boolean isRunning() { return running; }
 
     public void print(String text) {
+        if (!currentLine.isEmpty()) {
+            outputBuffer.add(currentLine.toString());
+            currentLine.setLength(0);
+        }
         outputBuffer.add(text);
     }
 
     public void clearScreen() {
         outputBuffer.clear();
+        currentLine.setLength(0);
     }
 
     public String getScreenContent() {
+        if (!currentLine.isEmpty()) {
+            return String.join("\n", outputBuffer) + "\n" + currentLine.toString();
+        }
         return String.join("\n", outputBuffer);
+    }
+
+    public void flushCurrentLine() {
+        if (!currentLine.isEmpty()) {
+            outputBuffer.add(currentLine.toString());
+            currentLine.setLength(0);
+        }
     }
 
     public void boot() {
@@ -65,12 +81,7 @@ public class Computer {
     }
 
     public void printInline(String text) {
-        if (outputBuffer.isEmpty()) {
-            outputBuffer.add(text);
-        } else {
-            int lastIndex = outputBuffer.size() - 1;
-            outputBuffer.set(lastIndex, outputBuffer.get(lastIndex) + text);
-        }
+        currentLine.append(text);
     }
 
     public void shutdown() {
