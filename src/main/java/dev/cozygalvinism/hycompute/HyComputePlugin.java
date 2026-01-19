@@ -1,17 +1,14 @@
 package dev.cozygalvinism.hycompute;
 
 import com.hypixel.hytale.component.ComponentType;
-import com.hypixel.hytale.server.core.HytaleServer;
-import com.hypixel.hytale.server.core.command.system.arguments.types.RelativeFloat;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.server.OpenCustomUIInteraction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
-import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import dev.cozygalvinism.hycompute.commands.ExampleCommand;
 import dev.cozygalvinism.hycompute.commands.OpenTerminalCommand;
 import dev.cozygalvinism.hycompute.components.ComputerBlock;
-import dev.cozygalvinism.hycompute.components.ComputerEntity;
+import dev.cozygalvinism.hycompute.components.ComputerOn;
 import dev.cozygalvinism.hycompute.gui.TerminalGUI;
 import dev.cozygalvinism.hycompute.gui.TerminalGUISupplier;
 
@@ -20,13 +17,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Stream;
 
 public class HyComputePlugin extends JavaPlugin {
     private static HyComputePlugin INSTANCE;
-    private ComponentType<ChunkStore, ComputerBlock> computerComponentType;
-    private ComponentType<EntityStore, ComputerEntity> computerEntityComponentType;
+    private ComponentType<ChunkStore, ComputerBlock> computerBlockComponentType;
+    private ComponentType<ChunkStore, ComputerOn> computerOnComponentType;
 
     public HyComputePlugin(@Nonnull JavaPluginInit init) {
         super(init);
@@ -42,20 +38,28 @@ public class HyComputePlugin extends JavaPlugin {
         this.getCommandRegistry().registerCommand(new ExampleCommand("example", "An example command"));
         this.getCommandRegistry().registerCommand(new OpenTerminalCommand());
 
-        OpenCustomUIInteraction.registerCustomPageSupplier(this, TerminalGUI.class, "ComputerTerminal", new TerminalGUISupplier(this.getDataDirectory()));
+        OpenCustomUIInteraction.registerCustomPageSupplier(this, TerminalGUI.class, "ComputerTerminal", new TerminalGUISupplier());
 
-        this.computerComponentType = this.getChunkStoreRegistry()
+        this.computerBlockComponentType = this.getChunkStoreRegistry()
                 .registerComponent(ComputerBlock.class, "ComputerBlock", ComputerBlock.CODEC);
-        this.computerEntityComponentType = this.getEntityStoreRegistry()
-                .registerComponent(ComputerEntity.class, "ComputerEntity", ComputerEntity.CODEC);
+        this.computerOnComponentType = this.getChunkStoreRegistry()
+                .registerComponent(ComputerOn.class, ComputerOn::new);
+
+        this.getChunkStoreRegistry().registerSystem(new ComputerSystems.ComputerStateSystem());
+        this.getChunkStoreRegistry().registerSystem(new ComputerSystems.DebugSystem());
+        this.getChunkStoreRegistry().registerSystem(new ComputerSystems.ComputerTurnOffSystem());
     }
 
-    public ComponentType<ChunkStore, ComputerBlock> getComputerComponentType() {
-        return this.computerComponentType;
+    public ComponentType<ChunkStore, ComputerBlock> getComputerBlockComponentType() {
+        return this.computerBlockComponentType;
     }
 
-    public ComponentType<EntityStore, ComputerEntity> getComputerEntityComponentType() {
-        return this.computerEntityComponentType;
+    public ComponentType<ChunkStore, ComputerOn> getComputerOnComponentType() {
+        return this.computerOnComponentType;
+    }
+
+    public Path getComputerPath(String id) {
+        return this.getDataDirectory().resolve("computers").resolve(id);
     }
 
     public List<String> listComputers() {

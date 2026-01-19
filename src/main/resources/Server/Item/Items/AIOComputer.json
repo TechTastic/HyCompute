@@ -34,7 +34,6 @@
     "BlockEntity": {
       "Components": {
         "ComputerBlock": {
-          "ComputerId": ""
         }
       }
     },

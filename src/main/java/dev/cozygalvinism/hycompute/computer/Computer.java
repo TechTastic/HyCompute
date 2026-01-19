@@ -1,5 +1,9 @@
 package dev.cozygalvinism.hycompute.computer;
 
+import com.hypixel.hytale.component.Ref;
+import com.hypixel.hytale.component.Store;
+import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
+import dev.cozygalvinism.hycompute.components.ComputerOn;
 import org.squiddev.cobalt.LuaTable;
 import org.squiddev.cobalt.ValueFactory;
 
@@ -17,6 +21,9 @@ public class Computer {
     private boolean running;
     private LuaExecutor luaExecutor;
 
+    private Store<ChunkStore> store;
+    private Ref<ChunkStore> ref;
+
     public Computer(UUID id, Path storagePath) throws VirtualFilesystem.FSException {
         this.id = id;
         this.filesystem = new VirtualFilesystem(storagePath, 1024 * 1024);
@@ -28,6 +35,11 @@ public class Computer {
     public VirtualFilesystem getFilesytem() { return filesystem; }
     public List<String> getOutputBuffer() { return outputBuffer; }
     public boolean isRunning() { return running; }
+
+    public void setStore(Store<ChunkStore> store, Ref<ChunkStore> ref) {
+        this.store = store;
+        this.ref = ref;
+    }
 
     public void print(String text) {
         if (!currentLine.isEmpty()) {
@@ -58,6 +70,11 @@ public class Computer {
 
     public void boot() {
         running = true;
+
+        if (store != null && ref != null) {
+            store.putComponent(ref, ComputerOn.getComponentType(), new ComputerOn());
+        }
+
         clearScreen();
 
         ROMManager.populateFilesystem(filesystem);
@@ -86,6 +103,10 @@ public class Computer {
 
     public void shutdown() {
         running = false;
+
+        if (store != null && ref != null) {
+            store.removeComponent(ref, ComputerOn.getComponentType());
+        }
     }
 
     public LuaExecutor getLuaExecutor() { return luaExecutor; }

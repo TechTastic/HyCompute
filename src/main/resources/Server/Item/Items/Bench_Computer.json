@@ -1,0 +1,78 @@
+{
+  "TranslationProperties": {
+    "Name": "hycompute.blocks.bench_computer.name",
+    "Description": "hycompute.blocks.bench_computer.description"
+  },
+  "UsePlayerAnimations": false,
+  "MaxStack": 1,
+  "Quality": "Technical",
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/CompTable/CompTable.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/comptable_texture.png"
+      }
+    ],
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Default",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "OpenCustomUI",
+            "Page": {
+              "Id": "ComputerTerminal"
+            }
+          }
+        ]
+      }
+    },
+    "BlockEntity": {
+      "Components": {
+        "ComputerBlock": {
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "ItemId": "Bench_Computer",
+        "GatherType": "Benches"
+      }
+    },
+    "HitboxType": "Bench_Computer",
+    "State":  {
+      "Definitions": {
+        "On": {
+          "Material": "Solid",
+          "DrawType": "Model",
+          "Opacity": "Transparent",
+          "CustomModel": "Blocks/CompTable/CompTable.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "BlockTextures/comptable_on_texture.png"
+            }
+          ]
+        },
+        "Off": {
+          "Material": "Solid",
+          "DrawType": "Model",
+          "Opacity": "Transparent",
+          "CustomModel": "Blocks/CompTable/CompTable.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "BlockTextures/comptable_texture.png"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Categories": [
+    "HyCompute.IC_HyCompute_Blocks"
+  ],
+  "Icon": "Icons/ItemsGenerated/AIOComputer.png"
+}
