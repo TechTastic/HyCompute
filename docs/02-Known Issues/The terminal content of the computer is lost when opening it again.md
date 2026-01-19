@@ -1,1 +1,0 @@
-Currently, computers don't keep track of the output in a persistent way. This will be added at a later point.
