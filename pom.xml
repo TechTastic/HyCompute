@@ -6,7 +6,7 @@
 
     <groupId>dev.cozygalvinism</groupId>
     <artifactId>HyCompute</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0-alpha</version>
     <licenses>
         <license>
             <name>MIT</name>
