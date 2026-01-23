@@ -27,6 +27,15 @@ public class LuaExecutor {
         setupFsAPI();
         setupOsAPI();
         setupShellAPI();
+
+        // alias some commonly used functions
+        try {
+            state.globals().rawset("print", state.globals().rawget("term").checkTable().rawget("print").checkFunction());
+        } catch (LuaError e) {
+            HyComputePlugin.get().getLogger()
+                    .atSevere()
+                    .log("Unable to copy print from term", e);
+        }
     }
 
     private void setupSandbox() {
