@@ -12,8 +12,9 @@ It is an Obsidian Vault, so for the best reading experience, you should use Obsi
 
 ## How to build
 
-1. Copy the Hytale server jar into the `libs` directory and name it `HytaleServer.jar`.
-2. Run `mvn package`
+```bash
+mvn clean package
+```
 
 ## How to install
 
@@ -23,6 +24,9 @@ It is an Obsidian Vault, so for the best reading experience, you should use Obsi
 
 ## Credits
 
+I want to thank the following people:
+
 - Hypixel team for making [Hytale](https://hytale.com)
-- [Hytale Modding Discord](https://discord.gg/hytalemodding) for the ideas and support
+- The [Hytale Modding Discord](https://discord.gg/hytalemodding) for the ideas and support
 - [SquidDev](https://squiddev.cc) for the [Cobalt](https://github.com/cc-tweaked/Cobalt) library
+- Punch1T for the Computer workbench model
