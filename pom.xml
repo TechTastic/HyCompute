@@ -24,6 +24,10 @@
             <id>squiddev</id>
             <url>https://squiddev.cc/maven/</url>
         </repository>
+        <repository>
+            <id>hytale-release</id>
+            <url>https://maven.hytale.com/release</url>
+        </repository>
     </repositories>
 
     <build>
@@ -67,10 +71,10 @@
     <dependencies>
         <dependency>
             <groupId>com.hypixel.hytale</groupId>
-            <artifactId>HytaleServer-parent</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/HytaleServer.jar</systemPath>
+            <artifactId>Server</artifactId>
+            <!-- Replace with latest version, we provide jars for the last five releases -->
+            <version>2026.01.28-87d03be09</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
