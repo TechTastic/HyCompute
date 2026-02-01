@@ -44,9 +44,6 @@ public class GlobalSystems {
 
                         ComputerBlock comp = new ComputerBlock(queuedComp.computerId());
                         chunkStore.putComponent(blockEntityRef, ComputerBlock.getComponentType(), comp);
-                        HyComputePlugin.get().getLogger()
-                                .atInfo()
-                                .log("WE FUCKING DID IT %s", queuedComp.computerId());
                         processed.add(queuedComp);
                     });
             HyComputePlugin.get().removeQueuedComputers(processed);
