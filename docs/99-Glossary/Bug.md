@@ -1,1 +1,0 @@
-A bug is an entity that can run programs written by the player. They can move around and, with upgrades, break and place blocks, deal damage etc. They are restricted in movement in that they can only move on the ground and are affected by gravity.
